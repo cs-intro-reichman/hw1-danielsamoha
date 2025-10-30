@@ -1,5 +1,8 @@
 // Generates three integer random numbers in a given range,
 // and prints them in increasing order.
+
+import java.util.Scanner;
+
 public class Ascend {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
