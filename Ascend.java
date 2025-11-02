@@ -6,6 +6,28 @@ import java.util.Scanner;
 public class Ascend {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		int lim = Integer.parseInt(args[0]);
+		int [] list = new int[3];//Unorder array
+		for (int i = 0; i <  3; i++) {
+			list[i] = (int)(Math.random()*lim + 1);
+		}
+		System.out.println(list[0] + " " + list[1] + " " + list[2]);
+		int a = Math.min(Math.min(list[0],list[1]), list[2]);
+		int b = Math.min(Math.max(list[0],list[1]), list[2]);
+		int c = Math.max(Math.max(list[0],list[1]), list[2]);
+		System.out.println(a + " " + b + " " + c);
+		input.close();
+		
+
+
+
+
+
+
+
+
+/* 
+		Scanner input = new Scanner(System.in);
 		System.out.println("Enter range:");//Enter the range
 		int min = input.nextInt();
 		int max = input.nextInt();
@@ -30,7 +52,7 @@ public class Ascend {
 			list[ind]= max + 1;
 				
 		}
-		input.close();
+		input.close();*/
 	}
 }
 
